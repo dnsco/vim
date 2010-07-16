@@ -1,9 +1,3 @@
-" Needed on some linux distros.
-" " see
-" http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
- filetype off 
- call pathogen#helptags()
- call pathogen#runtime_append_all_bundles()
 " 
 "  DennisCollective's vimrc
 "  its what gets me through.
@@ -11,10 +5,23 @@
 " to get it to work 
 " $ ln -s vimrc ~/.vimrc
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"					Load pathogen bundles
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Order of this incantation is magic, and necessary on debian based distros
+" http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html 
+"
+ filetype off   
+ call pathogen#helptags()
+ call pathogen#runtime_append_all_bundles()
+
+ syntax on
+ filetype plugin indent on
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "					Obvious Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set grepprg=ack-grep
 set nocompatible 			" 'cause this is vim, not vi 
 set encoding=utf-8
 set termencoding=latin1
