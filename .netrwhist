@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/dennis/code/cirvo/config/initializers'
+let g:netrw_dirhist_2='/home/dennis/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-3.0.0.beta4'
+let g:netrw_dirhist_3='/home/dennis/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-3.0.0.beta4'
+let g:netrw_dirhist_4='/home/dennis/code/cirvo/public/stylesheets'
+let g:netrw_dirhist_5='/home/dennis/.rvm/gems/ree-1.8.7-2010.02/gems/arel-0.4.0'
+let g:netrw_dirhist_6='/home/dennis/.rvm/gems/ruby-1.9.2-preview3/gems/activerecord-3.0.0.beta4'
+let g:netrw_dirhist_7='/home/dennis/.rvm/gems/ree-1.8.7-2010.02/gems/oauth-0.4.1'
+let g:netrw_dirhist_8='/home/dennis/.rvm/gems/ree-1.8.7-2010.02/gems/twitter-0.9.7'

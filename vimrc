@@ -46,12 +46,21 @@ set laststatus=2  " always show the status line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 
 set background=dark
-" colorscheme ir_black
-colorscheme vividchalk
 
+colorscheme vividchalk
+"colorscheme aiseered
+"colorscheme codeburn
+"colorscheme dark-ruby
+"colorscheme earthburn
+"colorscheme fruity
+"colorscheme herald
+"colorscheme ir_black
+"colorscheme jellybeans
+"colorscheme lettuce
+"colorscheme moria
+"colorscheme norwaytoday
 "colorscheme seoul
 
-"colorscheme fruity
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "					 Text Formatting
@@ -159,7 +168,7 @@ let g:speckyRunRdocCmd = "fri -L -f plain"
 let g:speckyWindowType = 2
 
 
-nmap ;f :FuzzyFinderTextMate<cr>
+nmap ;f :CommandT<cr>
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1

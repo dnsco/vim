@@ -14,14 +14,15 @@ git_bundles = [
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/vim-ruby/vim-ruby.git",
+  "git://github.com/akitaonrails/Command-T.git"
 ]
 
 vim_org_scripts = [
-  ["Gemfile", "2912", "syntax"],
-  ["minibufexpl", "159", "plugin"],
+  ["Gemfile", "12498", "syntax"],
+  ["minibufexpl", "3640", "plugin"],
   ["IndexedSearch", "7062",  "plugin"],
-  ["gist",          "12732", "plugin"],
-  ["jquery",        "12107", "syntax"],
+  ["gist",          "13105", "plugin"],
+  ["jquery",        "12276", "syntax"],
   ["comments", "9801", "plugin"]
 ]
 
@@ -29,7 +30,6 @@ require 'fileutils'
 require 'open-uri'
 
 bundles_dir = File.join(File.dirname(__FILE__), "bundle")
-
 FileUtils.cd(bundles_dir)
 
 puts "Trashing everything (lookout!)"
@@ -56,7 +56,10 @@ url = "http://code.martini.nu/vim-stuff/"
 dir = url.split('/').last
 puts "Unpacking #{url} into #{dir}"
 `hg clone #{url} #{dir}`
-FileUtils.rm_rf(File.join(dir, ".git"))
+FileUtils.rm_rf(File.join(dir, ".hg"))
 FileUtils.rm_rf(File.join(dir, "glimpse"))
 FileUtils.mv(File.join(dir, "specky"), bundles_dir)
 
+FileUtils.cd("Command-T/ruby/command-t")
+`ruby extconf.rb`
+`make`
