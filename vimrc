@@ -16,7 +16,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set grepprg=ack-grep
 set nocompatible 			" 'cause this is vim, not vi 
-
 set encoding=utf-8
 set termencoding=latin1
 set fileformat=unix
@@ -39,6 +38,8 @@ set showmode      " show the current Vim mode
 set showcmd		" display incomplete commands
 set wildmenu		" wildmenu surfing
 set laststatus=2  " always show the status line
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
