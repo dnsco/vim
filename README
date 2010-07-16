@@ -1,0 +1,9 @@
+My ~/.vim scenario that uses pathogen.
+
+symlink vimrc to ~/.vimrc and run update_bundles.rb and you are golden.
+
+update_bundles requires hg, Rtags, which is a hella nice part of rails.vim requires ctags.
+
+Thanks Tammer Saleh for update_bundles, that shit is sexy
+
+

@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
+
+# Jacked most of this from tammer Saleh, thanks dude!
+# http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
+
 git_bundles = [
   "git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
@@ -59,10 +63,10 @@ url = "http://code.martini.nu/vim-stuff/"
 dir = url.split('/').last
 puts "Unpacking #{url} into #{dir}"
 `hg clone #{url} #{dir}`
-FileUtils.rm_rf(File.join(dir, ".hg"))
-FileUtils.rm_rf(File.join(dir, "glimpse"))
-FileUtils.mv(File.join(dir, "specky"), bundles_dir)
+FileUtils.mv(File.join(dir, "specky"), '.')
+FileUtils.rm_rf(dir)
 
+#make command-t
 FileUtils.cd("Command-T/ruby/command-t")
 `ruby extconf.rb`
 `make`
