@@ -22,7 +22,8 @@ git_bundles = [
   "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/akitaonrails/Command-T.git",
-  "git://github.com/mileszs/ack.vim.git"
+  "git://github.com/mileszs/ack.vim.git",
+  "git://github.com/mattn/gist-vim"
 ]
 
 vim_org_scripts = [

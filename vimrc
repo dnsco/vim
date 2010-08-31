@@ -45,6 +45,7 @@ set showmode      " show the current Vim mode
 set showcmd		" display incomplete commands
 set wildmenu		" wildmenu surfing
 set laststatus=2  " always show the status line
+set scrolloff=5     "keep 5 lines more visible when scrolling
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
