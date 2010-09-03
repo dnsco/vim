@@ -176,7 +176,6 @@ let g:speckyRunSpecCmd = "spec -fs"
 let g:speckyRunRdocCmd = "fri -L -f plain"
 let g:speckyWindowType = 2
 
-
 nmap ;f :CommandT<cr>
 
 let g:miniBufExplMapWindowNavVim = 1
@@ -184,20 +183,25 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
-
 "let loaded_project = 1  		"disables Project plugin
 
-
-" key-mappings for comment line in normal mode
+" comments
 noremap  <silent> <C-C> :call CommentLine()<CR>
-" key-mappings for range comment lines in visual <Shift-V> mode
 vnoremap <silent> <C-C> :call RangeCommentLine()<CR>
-
-" key-mappings for un-comment line in normal mode
 noremap  <silent> <leader>u :call UnCommentLine()<CR>
-" key-mappings for range un-comment lines in visual <Shift-V> mode
 vnoremap <silent> <leader>u :call RangeUnCommentLine()<CR>
 
+
+" syntastic
+let g:syntastic_enable_signs=1
+"let g:syntastic_auto_loc_list=1 "let syntax checker open :Errors
+
+"statusline file - rails - git - warning errors -ruler
+set statusline=%<%f\ %h%m%r
+set statusline+=%{rails#statusline(0)}    
+set statusline+=%{fugitive#statusline()}
+set statusline+=%#warningmsg#%{SyntasticStatuslineFlag()}%*
+set statusline+=%=%-14.(%l,%c%V%)\ %P
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "       bindings
