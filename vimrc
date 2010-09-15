@@ -28,6 +28,15 @@ set termencoding=latin1
 set fileformat=unix
 set history=50			" keep 50 lines of command line history
 
+"turn off arrow keys
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "					Fun Settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

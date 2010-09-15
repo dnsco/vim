@@ -12,11 +12,12 @@ git_bundles = [
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/tpope/vim-rails.git",
+  "git://github.com/tpope/vim-rake.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/tpope/vim-vividchalk.git",
   "git://github.com/tsaleh/vim-align.git",
-  "http://github.com/tsaleh/vim-matchit.git",
+  "git://github.com/tsaleh/vim-matchit.git",
   "git://github.com/tsaleh/vim-shoulda.git",
   "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/tsaleh/vim-tcomment.git",
@@ -24,7 +25,8 @@ git_bundles = [
   "git://github.com/akitaonrails/Command-T.git",
   "git://github.com/mileszs/ack.vim.git",
   "git://github.com/mattn/gist-vim",
-  "http://github.com/scrooloose/syntastic.git"
+  "git://github.com/leshill/vim-json.git",
+  "git://github.com/scrooloose/syntastic.git"
 ]
 
 vim_org_scripts = [
