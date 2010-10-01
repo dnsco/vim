@@ -3,6 +3,10 @@
 # Jacked most of this from tammer Saleh, thanks dude!
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
 
+require 'fileutils'
+
+FileUtils.mkdir_p("bundle")
+
 git_bundles = [
   "git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
